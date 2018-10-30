@@ -32,7 +32,7 @@
 				<ul>
 					{% for category in site.data.tree %}
 						{% if category.name != page.title %}
-							<li><a href='/{{ category.name | downcase | url_escape }}' title='{{ category.name }}' class='secondary-menu-item {{ category.name | downcase }}'>{{ category.name }}</a></li>
+							<li><a href='{{ site.baseurl }}/{{ category.name | downcase | url_escape }}' title='{{ category.name }}' class='secondary-menu-item {{ category.name | downcase }}'>{{ category.name }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
