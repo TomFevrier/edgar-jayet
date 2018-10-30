@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang='fr'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Edgar Jayet</title>
+		<meta name='description' content='Edgar Jayet'>
+		<meta name='author' content='Edgar Jayet'>
+		<link rel='stylesheet' href='/css/styles.css'>
+		<link rel='stylesheet' href='/css/homepage.css'>
+		<script src='/js/homepage.js'></script>
+	</head>
+
+	<body>
+		<div class='page'>
+			<div id='menu-wrapper'>
+				<h1><a href='#'>Edgar Jayet</a></h1>
+				<nav id='main-menu'>
+					<ul>
+						{% for category in site.data.tree %}
+							<li><a href='{{ category.name | downcase | url_escape }}' title='{{ category.name }}' class='menu-item {{ category.name | downcase }}'>{{ category.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div id='circle-wrapper'>
+				<span id='circle'></span>
+			</div>
+		</div>
+
+	</body>
+</html>

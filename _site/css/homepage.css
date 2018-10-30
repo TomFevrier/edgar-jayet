@@ -1,0 +1,39 @@
+#circle {
+   border: 3px solid var(--main-color);
+   background-color: white;
+}
+
+.menu-item {
+    color: var(--secondary-color);
+    opacity: 0;
+}
+
+.menu-item.architecture:hover {
+    font-size: 2.5em;
+    color: var(--architecture-color);
+}
+
+.menu-item.design:hover {
+    font-size: 2.5em;
+    color: var(--design-color);
+}
+
+.menu-item.art:hover {
+    font-size: 2.5em;
+    color: var(--art-color);
+}
+
+.menu-item.publications:hover {
+    font-size: 2.5em;
+    color: var(--main-color);
+}
+
+.menu-item.about:hover {
+    font-size: 2.5em;
+    color: var(--main-color);
+}
+
+.menu-item.contact:hover {
+    font-size: 2.5em;
+    color: var(--main-color);
+}

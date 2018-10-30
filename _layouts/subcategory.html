@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang='fr'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Edgar Jayet</title>
+		<meta name='description' content='Edgar Jayet'>
+		<meta name='author' content='Edgar Jayet'>
+		<link rel='stylesheet' href='/css/styles.css?v=1.0'>
+		<link rel='stylesheet' href='/css/subcategory.css?v=1.0'>
+	</head>
+
+	<body>
+		<div class='page'>
+			<div id='menu-wrapper'>
+				<h1>Edgar Jayet</h1>
+				<nav>
+					<ul id='main-menu'>
+						{{ page.categories }}
+						{% for category in site.data.tree %}
+							{% if category.name == page.title %}
+								{% for item in category.subcategories %}
+									<li><a href='/{{ category.name | downcase }}/{{ item.name | downcase | url_escape }}' title='{{ item.name }}' class='menu-item'>{{ item.name }}</a></li>
+								{% endfor %}
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+				<nav>
+					<ul id='secondary-menu'>
+						{% for category in site.data.tree %}
+							{% if category.name != page.title %}
+								<li><a href='/{{ category.name | downcase | url_escape }}' title='{{ category.name }}' class='secondary-menu-item {{ category.name | downcase }}'>{{ category.name }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div id='circle-wrapper'>
+				<span id='circle'></span>
+			</div>
+		</div>
+
+		<style>
+			{% assign category = page.title | downcase %}
+			.title {
+				color: var(--{{ category }}-color);
+			}
+
+			#circle {
+			   border-color: var(--{{ category }}-color);
+			}
+
+			.menu-item {
+				color: var(--{{ category }}-color);
+			}
+		</style>
+
+	</body>
+</html>

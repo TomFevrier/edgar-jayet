@@ -1,0 +1,82 @@
+- name: Architecture
+  subcategories:
+    - name: HUB
+      subsubcategories:
+        -name: Context
+        -name: Programme
+        -name: Models
+        -name: Sketches
+        -name: Layouts
+        -name: Renderings
+        -name: Publication
+    - name: Landed
+      subsubcategories:
+        - name: Sketching
+        - name: Experimentations
+        - name: Layouts
+        - name: Models
+    - name: Concentrique
+      subsubcategories:
+        - name: Sketching
+        - name: Experimentations
+        - name: Layouts
+        - name: Models
+    - name: Promenade
+      subsubcategories:
+        - name: Sketching
+        - name: Experimentations
+        - name: Models
+- name: Design
+  subcategories:
+    - name: Topos
+      subsubcategories:
+        - name: Sketching
+        - name: Experimentations
+        - name: Layouts
+        - name: Models
+    - name: Les P’tits Boulevards
+      subsubcategories:
+        - name: Sketching
+        - name: Experimentations
+        - name: Layouts
+        - name: Models
+- name: Art
+  subcategories:
+    - name: Photography
+      subsubcategories:
+        - name: Beijing
+        - name: Zhangjiajie
+        - name: Hong Kong
+        - name: Tokyo
+        - name: Auckland
+        - name: Barcelona
+        - name: Paris
+        - name: Piha
+    - name: Encounter
+      subsubcategories:
+        - name: XVI
+        - name: III
+        - name: I
+    - name: Hybris
+      subsubcategories:
+        - name: Freder is Chained
+        - name: Vinculum
+        - name: Sans Titre
+        - name: '#lettrespersanes'
+        - name: nobis-portrait
+- name: Publications
+  subcategories:
+    - name: HUB
+      subcsubategories:
+    - name: 1A
+      subsubcategories:
+    - name: Séquences
+      subsubcategories:
+    - name: '#lettrespersanes'
+      subsubcategories:
+    - name: La Cité Radieuse
+      subsubcategories:
+- name: About
+  subcategories:
+- name: Contact
+  subcategories:
