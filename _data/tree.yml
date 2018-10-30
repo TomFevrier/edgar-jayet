@@ -2,13 +2,13 @@
   subcategories:
     - name: HUB
       subsubcategories:
-        -name: Context
-        -name: Programme
-        -name: Models
-        -name: Sketches
-        -name: Layouts
-        -name: Renderings
-        -name: Publication
+        - name: Context
+        - name: Programme
+        - name: Models
+        - name: Sketches
+        - name: Layouts
+        - name: Renderings
+        - name: Publication
     - name: Landed
       subsubcategories:
         - name: Sketching

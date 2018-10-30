@@ -1,0 +1,64 @@
+.category, .subcategory {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+.title {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.text p {
+	font-weight: normal;
+	margin: 0;
+	padding-right: 3em;
+}
+
+#circle {
+   border: 3px solid;
+   background-color: white;
+}
+
+.menu-item:hover {
+    color: var(--main-color);
+}
+
+.bottom-menu-item {
+    color: var(--secondary-color);
+}
+
+.bottom-menu-item.architecture:hover {
+    color: var(--architecture-color);
+}
+
+.bottom-menu-item.design:hover {
+    color: var(--design-color);
+}
+
+.bottom-menu-item.art:hover {
+    color: var(--art-color);
+}
+
+.bottom-menu-item.publications:hover {
+    color: var(--main-color);
+}
+
+.bottom-menu-item.about:hover {
+    color: var(--main-color);
+}
+
+.bottom-menu-item.contact:hover {
+    color: var(--main-color);
+}
+
+.bottom-submenu-item:hover {
+    color: var(--main-color);
+}
+
+.bottom-subsubmenu-item {
+    color: var(--main-color);
+}
+
+.bottom-subsubmenu-item:hover {
+    color: var(--secondary-color);
+}

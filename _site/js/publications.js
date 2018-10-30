@@ -2,7 +2,7 @@ window.onload = function() {
 
 	var hubMenu = document.getElementsByClassName('menu-item hub')[0];
 	var hub = document.createElement('img');
-	hub.setAttribute('src', '/media/hub-bleu.svg');
+	hub.setAttribute('src', '/media/hub-gris.svg');
 	hub.setAttribute('id', 'hub');
 	hub.style.opacity = 0;
 	document.getElementById('circle').appendChild(hub);
