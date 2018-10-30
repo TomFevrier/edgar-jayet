@@ -75,9 +75,9 @@ h1 {
 }
 
 #hub {
-	height: 98vmin;
-    width: 98vmin;
-	transform: translate(-7vmin, -10vmin);
+	height: 85vmin;
+    width: 85vmin;
+	transform: translate(-10vmin, -8vmin);
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
