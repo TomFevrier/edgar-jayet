@@ -8,7 +8,6 @@
 		<meta name='author' content='Edgar Jayet'>
 		<link rel='stylesheet' href='/css/styles.css?v=1.0'>
 		<link rel='stylesheet' href='/css/main.css?v=1.0'>
-		
 	</head>
 
 	<body>
@@ -17,29 +16,12 @@
 				<h1><a href='/' title='Homepage'>Edgar Jayet</a></h1>
 				<nav id='main-menu'>
 					<ul>
-						<li class='title'>Art</li>
-						
-							
-						
-							
-						
-							
-								
-									<li><a href='/art/photography' title='Photography' class='menu-item photography'>Photography</a></li>
-								
-									<li><a href='/art/encounter' title='Encounter' class='menu-item encounter'>Encounter</a></li>
-								
-									<li><a href='/art/hybris' title='Hybris' class='menu-item hybris'>Hybris</a></li>
-								
-							
-						
-							
-						
-							
-						
-							
-						
-					</ul>
+						<li class='category'></li>
+						<li class='subcategory'></li>
+						<li class='title'>About</li>
+						<li class='text'><p>My name is Edgar Jayet, this is my website.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur luctus tempor. Nunc placerat commodo arcu, quis tempus magna dictum vitae. Aenean id consequat odio.</p>
+</li>
 				</nav>
 			</div>
 			<nav id='bottom-menu'>
@@ -54,13 +36,13 @@
 						
 					
 						
+							<li><a href='/art' title='Art' class='bottom-menu-item art'>Art</a></li>
+						
 					
 						
 							<li><a href='/publications' title='Publications' class='bottom-menu-item publications'>Publications</a></li>
 						
 					
-						
-							<li><a href='/about' title='About' class='bottom-menu-item about'>About</a></li>
 						
 					
 						
@@ -69,23 +51,20 @@
 					
 				</ul>
 			</nav>
-			<div id='circle-wrapper'>
-				<span id='circle'></span>
-			</div>
 		</div>
 
 		<style>
 			
-			.title {
-				color: var(--art-color);
-			}
-
-			#circle {
-			   border-color: var(--art-color);
+			.category, .title, .text {
+				color: var(--about-color);
 			}
 
 			.menu-item {
-				color: var(--art-color);
+				color: var(--about-color);
+			}
+
+			.bottom-submenu-item {
+				color: var(--about-color);
 			}
 		</style>
 

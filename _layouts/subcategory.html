@@ -13,10 +13,10 @@
 	<body>
 		<div class='page'>
 			<div id='menu-wrapper'>
-				<h1>Edgar Jayet</h1>
+				<h1><a href='/' title='Homepage'>Edgar Jayet</a></h1>
 				<nav>
 					<ul id='main-menu'>
-						{{ page.categories }}
+						{{ page.category }}
 						{% for category in site.data.tree %}
 							{% if category.name == page.title %}
 								{% for item in category.subcategories %}

@@ -24,30 +24,17 @@
 			</div>
 			<nav id='bottom-menu'>
 				<ul>
-					<li><a href='{{ site.baseurl }}/{{ page.category | downcase | url_escape }}' title='Back' class='bottom-subsubmenu-item'>Back</a></li>
 					{% for category in site.data.tree %}
-						{% if category.name == page.category %}
-							{% for subcategory in category.subcategories %}
-								{% if subcategory.name != page.subcategory %}
-									<li><a href='{{ site.baseurl }}/{{ subcategory.name | downcase | url_escape }}' title='{{ subcategory.name }}' class='bottom-submenu-item'>{{ subcategory.name }}</a></li>
-								{% endif %}
-							{% endfor %}
-						{% endif %}
-					{% endfor %}
-					{% for category in site.data.tree %}
-						{% if category.name != page.category %}
+						{% if category.name != page.title %}
 							<li><a href='{{ site.baseurl }}/{{ category.name | downcase | url_escape }}' title='{{ category.name }}' class='bottom-menu-item {{ category.name | downcase }}'>{{ category.name }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
 			</nav>
-			<div id='gallery-wrapper'>
-				<img src='{{ site.baseurl }}/media/test.png' />
-			</div>
 		</div>
 
 		<style>
-			{% assign category = page.category | downcase %}
+			{% assign category = page.title | downcase %}
 			.category, .title, .text {
 				color: var(--{{ category }}-color);
 			}
